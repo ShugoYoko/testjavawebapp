@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    </head>
+    <body>
+        <form method="POST" action="/sql/answer">
+            <p>問1)データベース・テーブルの生成をする命令文はどれか</p>
+            <select name="q1">
+                <option value="1">DROP</option>
+                <option value="2">CREATE</option>
+                <option value="3">ALTER</option>
+            </select>
+            <p>問2)テーブルの変更をする命令文はどれか</p>
+            <select name="q2">
+                <option value="1">DROP</option>
+                <option value="2">CREATE</option>
+                <option value="3">ALTER</option>
+            </select>
+            <p>問3)レコードの取得をする命令文はどれか</p>
+            <select name="q3">
+                <option value="1">INSERT</option>
+                <option value="2">DELETE</option>
+                <option value="3">UPDATE</option>
+                <option value="4">SELECT</option>
+            </select>
+            <p>問4)レコードの追加をする命令文はどれか</p>
+            <select name="q4">
+                <option value="1">INSERT</option>
+                <option value="2">DELETE</option>
+                <option value="3">UPDATE</option>
+                <option value="4">SELECT</option>
+            </select>
+            <p>問5)レコードの削除をする命令文はどれか</p>
+            <select name="q5">
+                <option value="1">INSERT</option>
+                <option value="2">DELETE</option>
+                <option value="3">UPDATE</option>
+                <option value="4">SELECT</option>
+            </select>
+            
+            
+            <input type="submit" value="Submit" />
+          </form>
+
+    </body>
+</html>

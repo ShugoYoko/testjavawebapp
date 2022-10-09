@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script>
+      function clickbtn(){
+        
+        const selector=document.testchoice.choice;
+        //valueを取得
+        const value=selector.options[selector.selectedIndex].value;
+                
+        location.href="/"+value;
+      }
+
+    </script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p><%= title %></p>
+    <p>どの問題を選択しますか</p>
+        <form name="testchoice">
+          <select name="choice">
+            <option value="sql">SQL</option>
+          </select>
+        </form>
+    <p>選択したらボタンを教えてください</p>
+    <input type="submit" id="doLogin" value="Go" onclick="clickbtn()"/>
+  </body>
+</html>
